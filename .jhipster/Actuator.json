@@ -1,0 +1,33 @@
+{
+  "name": "Actuator",
+  "fields": [
+    {
+      "fieldName": "type",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "controlValue",
+      "fieldType": "Float"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "equipment",
+      "otherEntityRelationshipName": "actuator",
+      "relationshipName": "equipment",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20200817102747",
+  "entityTableName": "actuator",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

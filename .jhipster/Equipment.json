@@ -1,0 +1,38 @@
+{
+  "name": "Equipment",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "desciption",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "sensor",
+      "otherEntityRelationshipName": "equipment",
+      "relationshipName": "sensor"
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "actuator",
+      "otherEntityRelationshipName": "equipment",
+      "relationshipName": "actuator"
+    }
+  ],
+  "changelogDate": "20200817102847",
+  "entityTableName": "equipment",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

@@ -1,0 +1,34 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="equipment">
+            <h2><span jhiTranslate="iIoTapplicationApp.equipment.detail.title">Equipment</span> {{ equipment.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="iIoTapplicationApp.equipment.name">Name</span></dt>
+                <dd>
+                    <span>{{ equipment.name }}</span>
+                </dd>
+                <dt><span jhiTranslate="iIoTapplicationApp.equipment.desciption">Desciption</span></dt>
+                <dd>
+                    <span>{{ equipment.desciption }}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/equipment', equipment.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

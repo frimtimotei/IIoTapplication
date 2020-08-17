@@ -1,0 +1,24 @@
+{
+  "iIoTapplicationApp": {
+    "actuator": {
+      "home": {
+        "title": "Actuators",
+        "createLabel": "Create a new Actuator",
+        "createOrEditLabel": "Create or edit a Actuator",
+        "notFound": "No Actuators found"
+      },
+      "created": "A new Actuator is created with identifier {{ param }}",
+      "updated": "A Actuator is updated with identifier {{ param }}",
+      "deleted": "A Actuator is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Actuator {{ id }}?"
+      },
+      "detail": {
+        "title": "Actuator"
+      },
+      "type": "Type",
+      "controlValue": "Control Value",
+      "equipment": "Equipment"
+    }
+  }
+}

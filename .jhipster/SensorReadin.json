@@ -1,0 +1,33 @@
+{
+  "name": "SensorReadin",
+  "fields": [
+    {
+      "fieldName": "value",
+      "fieldType": "Float"
+    },
+    {
+      "fieldName": "time",
+      "fieldType": "Instant"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "sensor",
+      "otherEntityRelationshipName": "sensor",
+      "relationshipName": "sensor",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20200817102947",
+  "entityTableName": "sensor_readin",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

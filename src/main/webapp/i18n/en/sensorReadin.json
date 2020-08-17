@@ -1,0 +1,24 @@
+{
+  "iIoTapplicationApp": {
+    "sensorReadin": {
+      "home": {
+        "title": "Sensor Readins",
+        "createLabel": "Create a new Sensor Readin",
+        "createOrEditLabel": "Create or edit a Sensor Readin",
+        "notFound": "No Sensor Readins found"
+      },
+      "created": "A new Sensor Readin is created with identifier {{ param }}",
+      "updated": "A Sensor Readin is updated with identifier {{ param }}",
+      "deleted": "A Sensor Readin is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Sensor Readin {{ id }}?"
+      },
+      "detail": {
+        "title": "Sensor Readin"
+      },
+      "value": "Value",
+      "time": "Time",
+      "sensor": "Sensor"
+    }
+  }
+}

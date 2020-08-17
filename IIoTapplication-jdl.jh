@@ -1,0 +1,39 @@
+entity Sensor {
+	sensorName String
+    tipSensor String
+    description String
+  
+}
+
+entity Actuator{
+	type String
+    controlValue Float
+}
+
+entity Equipment{
+	name String
+    desciption String   
+}
+
+entity SensorReadin
+{
+	value Float
+    time Instant
+}
+
+relationship OneToMany{
+  Equipment{sensor} to Sensor
+}
+
+relationship OneToMany{
+  Equipment{actuator} to Actuator
+}
+
+relationship OneToMany{
+	Sensor{sensor} to SensorReadin
+}
+
+
+
+
+

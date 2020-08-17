@@ -1,0 +1,43 @@
+{
+  "name": "Sensor",
+  "fields": [
+    {
+      "fieldName": "sensorName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tipSensor",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "sensorReadin",
+      "otherEntityRelationshipName": "sensor",
+      "relationshipName": "sensor"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "equipment",
+      "otherEntityRelationshipName": "sensor",
+      "relationshipName": "equipment",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20200817102647",
+  "entityTableName": "sensor",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}
