@@ -23,7 +23,16 @@
         },
         "@schematics/angular:service": {
           "skipTests": true
-        }
+        },
+                    "styles": [
+              "src/styles.scss"
+              "./node_modules/primeicons/primeicons.css",
+  				"./node_modules/primeng/resources/themes/nova-light/theme.css",
+  				"./node_modules/primeng/resources/primeng.min.css",
+            ],
+            "scripts": [
+            "../node_modules/chart.js/dist/Chart.js",
+            ]
       },
       "prefix": "jhi",
       "architect": {}
@@ -32,5 +41,8 @@
   "defaultProject": "i-io-tapplication",
   "cli": {
     "packageManager": "npm"
+    
   }
+  
+  
 }
