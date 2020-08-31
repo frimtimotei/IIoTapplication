@@ -4,7 +4,9 @@ import { Subscription } from 'rxjs';
 import { LoginModalService } from 'app/core/login/login-modal.service';
 import { AccountService } from 'app/core/auth/account.service';
 import { Account } from 'app/core/user/account.model';
-import {SensorReadin} from "app/shared/model/sensor-readin.model";
+
+
+
 
 @Component({
   selector: 'jhi-home',
@@ -30,6 +32,12 @@ export class HomeComponent implements OnInit, OnDestroy {
                     label: 'Second Dataset',
                     data: [28, 48, 40, 19, 86, 27, 90]
                 }
+
+              {
+                label: "third Dataset",
+                data:[40, 23, 43, 22, 1, 3, 23]
+                
+              }
             ]
         }
   }
